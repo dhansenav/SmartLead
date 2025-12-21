@@ -74,7 +74,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
           </form>
 
           <div className="mt-6 md:mt-8 text-center text-sm md:text-base">
-            <p className="text-[#1F2F4A] font-semibold">Call: +91-8448448718</p>
+            <p className="text-[#1F2F4A] font-semibold">Call: +91-9920455923</p>
           </div>
         </div>
       </div>
