@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "dhansenav.github.io/smartweb/",
+  "homepage": "dhansenav.github.io/SmartLead/",
   "scripts": {
     "plop": "plop",
     "dev": "vite",
