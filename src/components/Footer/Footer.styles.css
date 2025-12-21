@@ -1,0 +1,122 @@
+/* FOOTER BASE */
+.footer {
+  background: #000;
+  color: #fff;
+  padding-top: 60px;
+  font-family: "Inter", sans-serif;
+}
+
+/* TOP FOOTER */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+/* COLUMN */
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-column h3::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #009688;
+  display: block;
+  margin-top: 8px;
+}
+
+.footer-column p,
+.footer-column li {
+  font-size: 15px;
+  color: #bfc6cf;
+  line-height: 1.7;
+}
+
+/* LINKS */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 4px;
+  line-height: 1.7;
+  cursor: pointer;
+}
+
+
+.footer-column li:hover {
+  color: #ffffff;
+}
+
+/* BOTTOM FOOTER */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.footer-bottom h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:nth-child(1) { background: #1877f2; }
+.social-icons a:nth-child(2) { background: #000; }
+.social-icons a:nth-child(3) { background: #e1306c; }
+.social-icons a:nth-child(4) { background: #0a66c2; }
+
+.social-icons a:hover {
+  transform: translateY(-4px);
+}
+
+/* COPYRIGHT */
+.footer-bottom p {
+  font-size: 14px;
+  color: #9aa3ad;
+}
+
+.footer-bottom .privacy {
+  color: #009688;
+  cursor: pointer;
+}
+
+.footer-bottom .privacy:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 30px;
+  }
+}

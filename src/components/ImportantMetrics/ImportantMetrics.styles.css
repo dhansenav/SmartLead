@@ -1,0 +1,88 @@
+/* SECTION */
+.metrics-section {
+  padding: 90px 40px;
+  background: #ffffff;
+  text-align: center;
+}
+
+/* HEADER */
+.metrics-header {
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.metrics-header h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.metrics-header p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* GRID */
+.metrics-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.metric-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ICON */
+.metric-icon {
+  font-size: 36px;
+  color: #1F2F4A;
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+.metric-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* TEXT */
+.metric-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics-section {
+    padding: 70px 20px;
+  }
+
+  .metrics-header h2 {
+    font-size: 26px;
+  }
+}

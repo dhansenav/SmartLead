@@ -1,0 +1,123 @@
+.offerings-section {
+  padding: 90px 40px;
+  background: #ffffff;
+}
+
+/* ================= HEADER ================= */
+
+.offerings-header {
+  max-width: 1000px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.offerings-header h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.offerings-header p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ================= LAYOUT ================= */
+
+.offerings-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* ================= TIMELINE ================= */
+
+/* ================= TIMELINE ================= */
+
+.timeline {
+  position: relative;
+  padding-left: 50px; /* enough space for line + dot */
+  max-width: 600px;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #cfe3ff;
+}
+
+/* Each item */
+.timeline-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 45px;
+}
+
+/* Dot */
+.timeline-dot {
+  position: absolute;
+  left: -12px; /* aligns dot on line */
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: #3b82f6;
+  border-radius: 50%;
+  border: 4px solid #eaf2ff;
+}
+
+/* Content */
+.timeline-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.timeline-content p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ================= IMAGE ================= */
+
+.offerings-image img {
+  height: 450px;
+  scale: 90%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .offerings-content {
+    grid-template-columns: 1fr;
+  }
+
+  .offerings-image {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .offerings-section {
+    padding: 60px 20px;
+  }
+
+  .offerings-header h2 {
+    font-size: 28px;
+  }
+}
+

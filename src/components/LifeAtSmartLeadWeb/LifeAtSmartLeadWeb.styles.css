@@ -1,0 +1,65 @@
+.life-section {
+  padding: 90px 40px;
+  background: #ffffff;
+  text-align: center;
+}
+
+/* TITLE */
+.life-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.life-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+/* GALLERY */
+.life-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* IMAGE CARD */
+.life-image {
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.life-image img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.life-image:hover img {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .life-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .life-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .life-section {
+    padding: 60px 20px;
+  }
+
+  .life-title {
+    font-size: 28px;
+  }
+}

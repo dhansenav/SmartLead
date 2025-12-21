@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Keep this to ensure the layout matches your goal */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; /* For the white sections */
+}
