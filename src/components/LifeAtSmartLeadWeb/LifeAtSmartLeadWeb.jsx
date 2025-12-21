@@ -2,9 +2,9 @@ import React from 'react';
 import './LifeAtSmartLeadWeb.styles.css';
 
 const images = [
-  '/meeting1.png',
-  '/meeting2.png',
-  '/meeting3.png'
+  './meeting1.png',
+  './meeting2.png',
+  './meeting3.png'
 ];
 
 const LifeAtSmartLeadWeb = () => {

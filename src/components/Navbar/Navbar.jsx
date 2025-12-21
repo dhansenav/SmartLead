@@ -9,7 +9,7 @@ const Navbar = ({ onEnquireClick }) => {
       <nav className="flex items-center justify-between px-6 py-4 bg-white sticky top-0 z-50 shadow-sm border-b border-gray-100">
         {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src="/smartlogo.png" alt="smartleadweb Logo" className="h-10 w-auto scale-150" />
+            <img src="./smartlogo.png" alt="smartleadweb Logo" className="h-10 w-auto scale-150" />
           </div>
 
         {/* Desktop & Action Items */}
