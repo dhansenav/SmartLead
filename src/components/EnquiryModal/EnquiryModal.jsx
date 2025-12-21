@@ -1,11 +1,25 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { X } from 'lucide-react';
 
 const EnquiryModal = ({ isOpen, onClose }) => {
-  if (!isOpen) return null;
+
+  // Disable scrolling when modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
+   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-md will-change-transform px-4">
       {/* Modal Container */}
       <div className="bg-white rounded-lg shadow-2xl w-full max-w-[500px] md:max-w-[600px] md:max-h-[560px] relative overflow-hidden">
         
