@@ -1,5 +1,7 @@
 import React from 'react';
 import './Offerings.styles.css';
+import digitalimg from '../../assets/digitalimg.png';
+
 
 const offerings = [
   {
@@ -54,7 +56,7 @@ const Offerings = () => {
 
         {/* Image */}
         <div className="offerings-image">
-          <img src="src/assets/digitalimg.png" alt="Digital Marketing" />
+          <img src={digitalimg} alt="Digital Marketing" />
         </div>
       </div>
     </section>

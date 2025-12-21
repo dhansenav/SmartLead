@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Menu, X, ChevronRight } from 'lucide-react'; // Added Chevron for better UI
+import smartLogo from '../../assets/smartlogo.png';
 
 const Navbar = ({ onEnquireClick }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = ({ onEnquireClick }) => {
       <nav className="flex items-center justify-between px-6 py-4 bg-white sticky top-0 z-50 shadow-sm border-b border-gray-100">
         {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src="./smartlogo.png" alt="smartleadweb Logo" className="h-10 w-auto scale-150" />
+            <img src={smartLogo} alt="smartleadweb Logo" className="h-10 w-auto scale-150" />
           </div>
 
         {/* Desktop & Action Items */}
