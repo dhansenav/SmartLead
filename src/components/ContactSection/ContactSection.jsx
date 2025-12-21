@@ -12,25 +12,37 @@ const ContactSection = () => {
           <p className="text-gray-600">Contact us for a quote</p>
         </div>
 
-        {/* This is the container that needs to be a Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-2 gap-12 items-start">
+        {/* Grid Container */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           
           {/* LEFT SIDE: The White Form Card */}
-          <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+          <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-100">
             <form className="space-y-6">
               <div>
                 <label className="block text-sm font-bold text-gray-700 mb-2">Name *</label>
-                <input type="text" placeholder="Name" className="w-full p-3 border rounded-md bg-gray-50 focus:ring-2 focus:ring-blue-500 outline-none" />
+                <input 
+                  type="text" 
+                  placeholder="Name" 
+                  className="w-full p-3 border rounded-md bg-gray-50 focus:ring-2 focus:ring-blue-500 outline-none" 
+                />
               </div>
               <div>
                 <label className="block text-sm font-bold text-gray-700 mb-2">Email *</label>
-                <input type="email" placeholder="Email" className="w-full p-3 border rounded-md bg-gray-50 focus:ring-2 focus:ring-blue-500 outline-none" />
+                <input 
+                  type="email" 
+                  placeholder="Email" 
+                  className="w-full p-3 border rounded-md bg-gray-50 focus:ring-2 focus:ring-blue-500 outline-none" 
+                />
               </div>
               <div>
                 <label className="block text-sm font-bold text-gray-700 mb-2">Phone *</label>
-                <input type="text" placeholder="Phone" className="w-full p-3 border rounded-md bg-gray-50 focus:ring-2 focus:ring-blue-500 outline-none" />
+                <input 
+                  type="text" 
+                  placeholder="Phone" 
+                  className="w-full p-3 border rounded-md bg-gray-50 focus:ring-2 focus:ring-blue-500 outline-none" 
+                />
               </div>
-              <button className="bg-[#1F2F4A] text-white px-10 py-3 rounded-md font-bold shadow-md hover:opacity-90 transition-opacity">
+              <button className="bg-[#1F2F4A] text-white px-10 py-3 rounded-md font-bold shadow-md hover:opacity-90 transition-opacity w-full md:w-auto">
                 Send
               </button>
             </form>
@@ -41,11 +53,11 @@ const ContactSection = () => {
             <div>
               <h3 className="text-xl font-bold mb-4 text-gray-800">For Business Enquiries, please contact</h3>
               <p className="text-gray-700 font-medium">Mr.Fahim Shaikh, Business Development</p>
-              <p className="text-[#1F2F4A] font-bold mt-2">Call: +91 9920455923 </p>
+              <p className="text-[#1F2F4A] font-bold mt-2">Call: +91 9920455923</p>
               <p className="text-[#1F2F4A] font-bold">Mail: info.smartleadweb@gmail.com</p>
             </div>
             
-            {/* The Map Box */}
+            {/* Map Box */}
             <div className="w-full h-[266px] rounded-xl overflow-hidden shadow-inner border border-gray-200">
                <iframe 
                   title="office-location"
