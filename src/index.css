@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../src/**/*.{jsx,tsx}";
 
 /* Keep this to ensure the layout matches your goal */
 body {

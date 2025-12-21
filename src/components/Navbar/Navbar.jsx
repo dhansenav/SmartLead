@@ -78,8 +78,12 @@ const Navbar = ({ onEnquireClick }) => {
              <p className="text-xs uppercase tracking-widest text-gray-400 font-bold">Contact Support</p>
              <div className="flex items-center gap-3 p-4 bg-blue-50 rounded-xl text-blue-800 font-bold">
                 <Phone size={20} />
-                <span>+91-8448448718</span>
+                <span>+91-99204 55923</span>
              </div>
+             <div className="flex items-center gap-3 p-4 bg-blue-50 rounded-xl text-blue-800 font-bold">
+                <Phone size={20} />
+             <span> +91 98202 14679</span>
+            </div>
           </div>
         </div>
       </div>

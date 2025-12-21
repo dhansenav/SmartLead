@@ -18,8 +18,9 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Business Enquiries</h3>
           <p>
-            Mr. Fahim Shaikh <br />
-            India: +91 99204 55923   <br />
+            Mr. Fahim Shaikh,Mr.Sahil khan <br />
+            +91 99204 55923 /
+            +91 98202 14679 <br />
             Email: info.smartleadweb@gmail.com
           </p>
         </div>
