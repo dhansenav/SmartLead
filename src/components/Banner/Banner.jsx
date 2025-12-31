@@ -40,9 +40,18 @@ const Banner = () => {
             </label>
           </div>
 
-          <button type="submit" className="submit-btn">
-            Submit
-          </button>
+<button
+  type="button"
+  className="submit-btn"
+  onClick={() =>
+    window.open(
+      "https://wa.me/919920455923?text=Hello%20I%20am%20interested%20in%20your%20services",
+      "_blank"
+    )
+  }
+>
+  Submit
+</button>
         </form>
       </div>
     </section>
