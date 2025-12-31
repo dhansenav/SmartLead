@@ -61,7 +61,7 @@ const Navbar = ({ onEnquireClick }) => {
 
         {/* Menu Links */}
         <div className="flex flex-col py-4">
-          {['Home', 'Services', 'Portfolio', 'Contact Us'].map((item) => (
+          {['Home', 'Services', 'Projects', 'Contact Us'].map((item) => (
             <a 
               key={item}
               href={`#${item.toLowerCase().replace(' ', '-')}`} 

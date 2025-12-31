@@ -8,6 +8,7 @@ import Projects from './components/Ourprojects/Ourprojects.jsx';
 import WhyChooseUs from './components/Whychooseus/Whychooseus.jsx';
 import HowWeHelp from './components/Howwehelp/Howwehelp.jsx';
 import Offerings from './components/Offerings/Offerings.jsx';
+import Services from './components/Services/Services.jsx'; 
 import Platforms from './components/Platforms/Platforms.jsx';
 import ImportantMetrics from './components/ImportantMetrics/ImportantMetrics.jsx';
 import LifeAtSmartLeadWeb from './components/LifeAtSmartLeadWeb/LifeAtSmartLeadWeb.jsx';
@@ -42,6 +43,7 @@ function App() {
         <WhyChooseUs />
         <HowWeHelp />
         <Offerings />
+        <Services />
         <Platforms />
         <ImportantMetrics />
         <TestimonialSlider/>
